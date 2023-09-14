@@ -30,7 +30,7 @@ class BooksEndpointTest {
 	@Test
 	void test_postMethod() throws JSONException {
 		
-		JSONObject book = new JSONObject("{ \"name\": \"TFIOS\",\"author\": \"John Green\", \"genre\": \"Fiction\"}");
+		JSONObject book = new JSONObject("{'name': 'TFIOS','author': 'John Green', 'genre': 'Fiction'}");
 		
 		given().
 			contentType(ContentType.JSON).body(book.toString()).post("/books").
