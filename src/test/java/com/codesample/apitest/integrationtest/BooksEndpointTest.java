@@ -10,6 +10,7 @@ import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.*;
 
+//@SpringBootTest(webEnvironment=SpringBootTest.WebEnvironment.DEFINED_PORT) : For tests under same project
 @SpringBootTest
 class BooksEndpointTest {
 
